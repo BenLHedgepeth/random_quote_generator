@@ -34,12 +34,8 @@ function shift_quote(event) {
   var next_card = document.getElementById("next_card");
   var main_card = document.getElementById("main_card");
 
-  // style next_card for pending click event
-  // create_quote(next_card);
-  //shift quotes_wrapper down to simulate sliding transition upon click event
-  // var quotes_wrapper = document.querySelector(".quote-box");
   main_card.style.transform = "translateY(300px)";
-  // quotes_wrapper.style.transform = "translateY(0)";
+
   // next_card is displayed to the user
 
   var updated_main_card = next_card.cloneNode(true);
@@ -50,7 +46,7 @@ function shift_quote(event) {
 
   next_card.parentElement.replaceChild(updated_main_card, main_card);
   //reset CSS transition for next click event
-  // quotes_wrapper.style.transform = "translateY(-300px)";
+
   // generate a new quote for the next_card
   for (var i = 0; i < 2; i++) {
     create_quote(next_card);

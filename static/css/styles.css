@@ -35,17 +35,4 @@ body p {
   color: red;
 }
 
-@keyframes slide {
-  from {
-    transform: translate(-100%);
-  }
-  50% {
-    transform: translate(0);
-  }
-  to {
-    transform: translate(100%);
-    animation-play-state: paused;
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */
